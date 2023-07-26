@@ -77,3 +77,5 @@ gem 'guard-minitest', '2.4.6'
 end
 
 gem "tailwindcss-rails", "~> 2.0"
+
+gem "byebug", "~> 11.1", :groups => [:development, :test]
