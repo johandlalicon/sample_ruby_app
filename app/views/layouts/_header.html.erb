@@ -11,6 +11,11 @@
     </li>
   </ul>
   <div>
-    Sign In
+    <% if logged_in? %>
+      <%= link_to "Dashboard", current_user %>
+      <%= button_to "Logout", logout_path, method: :delete %>
+    <% else %>
+      <%= link_to "Sign In", login_path %>
+    <% end %>
   </div>
 </nav>
