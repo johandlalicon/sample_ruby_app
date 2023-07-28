@@ -1,6 +1,6 @@
 <% provide(:title, @user.name)%>
-<div class="container mx-auto text-center">
-  <div class="flex gap-4">
+<div class="container mx-auto text-center mb-4">
+  <div class="flex gap-4 mt-10">
     <%= gravatar_for @user %>
     <h1 class="text-4xl font-extrabold"><%= @user.name %></h1>
   </div>

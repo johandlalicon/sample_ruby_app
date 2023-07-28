@@ -2,5 +2,10 @@ cuckoo:
   name: I'mma Cuckoo
   email: bns@example.com
   password_digest: <%= User.digest('password') %>
+
+sleepyhead:
+  name: Passion Pit
+  email: passionpit@example.gov
+  password_digest: <%= User.digest('password') %>
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 #empty
