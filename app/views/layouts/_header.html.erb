@@ -10,8 +10,9 @@
       <%= link_to "Help", help_path %>
     </li>
   </ul>
-  <div>
+  <div class="flex gap-2">
     <% if logged_in? %>
+      <%= link_to "Settings", edit_user_path(current_user) %>
       <%= link_to "Dashboard", current_user %>
       <%= button_to "Logout", logout_path, method: :delete %>
     <% else %>
