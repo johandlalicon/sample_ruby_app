@@ -6,6 +6,12 @@ ruby "3.2.2"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.6"
 
+# Faker; generates fake data
+gem 'faker', '~> 3.2'
+
+# Performs paginated queries
+gem 'will_paginate', '~> 3.1', '>= 3.1.6'
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
@@ -70,10 +76,10 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
   gem 'rails-controller-testing', '1.0.5'
-gem 'minitest', '5.11.3'
-gem 'minitest-reporters', '1.3.8'
-gem 'guard', '2.15.0'
-gem 'guard-minitest', '2.4.6'
+  gem 'minitest', '5.11.3'
+  gem 'minitest-reporters', '1.3.8'
+  gem 'guard', '2.15.0'
+  gem 'guard-minitest', '2.4.6'
 end
 
 gem "tailwindcss-rails", "~> 2.0"

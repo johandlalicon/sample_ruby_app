@@ -2,6 +2,7 @@ cuckoo:
   name: I'mma Cuckoo
   email: bns@example.com
   password_digest: <%= User.digest('password') %>
+  admin: true
 
 sleepyhead:
   name: Passion Pit
