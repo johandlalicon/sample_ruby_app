@@ -1,0 +1,10 @@
+<div class="w-full text-center p-10">
+  <h1 class="text-4xl font-extrabold">All Users</h1>
+</div>
+<div class="p-4 text-sm">
+  <%= will_paginate class: "flickr_pagination" %>
+</div>
+<ul class="flex flex-col gap-4 mt-4">
+  <%= render @users %>
+</ul>
+<%= will_paginate %>

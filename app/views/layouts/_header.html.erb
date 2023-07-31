@@ -2,16 +2,9 @@
   <div>
     <%= link_to image_tag('RailsLogo.svg', width: "100px"), root_path %>
   </div>
-  <ul class="flex flex-row list-none gap-4">
-    <li>
-      <%= link_to "About", about_path %>
-    </li>
-    <li>
-      <%= link_to "Help", help_path %>
-    </li>
-  </ul>
   <div class="flex gap-2">
     <% if logged_in? %>
+      <%= link_to "All Users", users_path %>
       <%= link_to "Settings", edit_user_path(current_user) %>
       <%= link_to "Dashboard", current_user %>
       <%= button_to "Logout", logout_path, method: :delete %>
